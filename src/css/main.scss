@@ -3,7 +3,9 @@
 @import "./partials/visually-hidden.scss";
 @import "./partials/slick.scss";
 @import "./partials/cmn-toggle-switch.scss";
-@import "partials/container";
+@import "partials/about";
+@import "partials/video";
+@import "partials/whom";
 
 
 @font-face {
@@ -74,4 +76,43 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main__title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #003D82;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main__btn {
+
+  background: linear-gradient(90deg, #194EA5 0%, #134699 100%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .main__btn {
+    width: 280px;
+    margin: 30px auto;
+  }
+}
+
+
+@media (min-width: 1170px) {
+  .main__title {
+    font-size: 50px;
+    margin: 30px 0;
+  }
 }
